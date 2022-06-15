@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import "./Style.css";
 const Tempapp = () => {
   const [city, setCity] = useState(null);
+  // let [color, setColor] = useState("box");
+  let color="box";
   const [search, setSearch] = useState("Bhopal");
   const [mainn, setmainn] = useState({});
   const [speed, setspeed] = useState();
@@ -18,9 +20,21 @@ const Tempapp = () => {
     };
     fetchApi();
   }, [search]);
+  const cNmae=()=>{
+    // console.log(mainn.temp);
+    if(mainn.temp===undefined || !city)color="box";
+    else if(mainn.temp<=12)color="box0";
+    else if(mainn.temp<=20 && mainn.temp>12)color="box1";
+    else if(mainn.temp<=28 && mainn.temp>20)color="box2";
+    else if(mainn.temp<=38 && mainn.temp>28)color="box3";
+    else if(mainn.temp>38 )color="box4";
+    return ;
+
+  }
+  cNmae();
   return (
     <>
-      <div className="box">
+      <div className={color}>
         <div className="inputData">
           <input
             type="search"
@@ -32,7 +46,12 @@ const Tempapp = () => {
           ></input>
         </div>
         {!city ? (
-          <p>No City Found</p>
+          <h1 style={{marginLeft:"60px"}}>No City Found
+          <i style={{marginLeft:"40px"}} className="fas fa-street-view"></i>
+          {/* <i style={{marginLeft:"40px"}} className="fa-solid fa-empty-set"></i> */}
+          {/* <FontAwesomeIcon icon="fa-solid fa-empty-set" /> */}
+          </h1>
+
         ) : (
           <div>
             <div className="info">
