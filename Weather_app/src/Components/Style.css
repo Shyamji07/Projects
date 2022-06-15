@@ -25,13 +25,72 @@ html {
 html {
     background: rgb(16, 0, 0);
 }
-
 .box {
     width: 25vw;
     height: 60vh;
     border-radius: 0.5rem;
+    box-shadow: 0 0.2rem 3rem rgba(56, 46, 46, 0.2);
+    background: #39393b;
+    position: relative;
+    overflow: hidden;
+    transform: translate3d(0, 0, 0);
+    min-width: 20rem;
+    min-height: 35rem;
+}
+.box0 {
+    width: 25vw;
+    height: 60vh;
+    border-radius: 0.5rem;
     box-shadow: 0 0.2rem 3rem rgba(0, 0, 0, 0.2);
-    background: #052b63;
+    background: #5c6066;
+    position: relative;
+    overflow: hidden;
+    transform: translate3d(0, 0, 0);
+    min-width: 20rem;
+    min-height: 35rem;
+}
+.box1 {
+    width: 25vw;
+    height: 60vh;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.2rem 3rem rgba(0, 0, 0, 0.2);
+    background: #a6b5cb;
+    position: relative;
+    overflow: hidden;
+    transform: translate3d(0, 0, 0);
+    min-width: 20rem;
+    min-height: 35rem;
+}
+.box2 {
+    width: 25vw;
+    height: 60vh;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.2rem 3rem rgba(0, 0, 0, 0.2);
+    background: #4377c6;
+    position: relative;
+    overflow: hidden;
+    transform: translate3d(0, 0, 0);
+    min-width: 20rem;
+    min-height: 35rem;
+}
+.box3 {
+    width: 25vw;
+    height: 60vh;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.2rem 3rem rgba(0, 0, 0, 0.2);
+    background: #df8c0f;
+    position: relative;
+    overflow: hidden;
+    transform: translate3d(0, 0, 0);
+    min-width: 20rem;
+    min-height: 35rem;
+}
+.box4 {
+    width: 25vw;
+    height: 60vh;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.2rem 3rem rgba(0, 0, 0, 0.2);
+    background: #c50e0e;
     position: relative;
     overflow: hidden;
     transform: translate3d(0, 0, 0);
